@@ -87,8 +87,8 @@ async function third(date) {
 }
 
 function fourth(date, token) {
-  if (new Date(date) == 'Invalid Date') {
-    console.error(new Date(date))
+  if (new Date(date) == 'Invalid Date' || token == NaN) {
+    console.error('Wrong Format')
     return
   }
   var portfolio = 0
