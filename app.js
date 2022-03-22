@@ -185,7 +185,7 @@ const toTimestamp = (strDate) => {
   return dt / 1000
 }
 
-//Processing the
+//Processing the parameters
 if (argv.token && !argv.date) {
   var tok = argv.token
   second(tok)
@@ -202,6 +202,5 @@ if (argv.token && !argv.date) {
 ) {
   console.error('wrong format')
 } else {
-  console.log('hello')
   first()
 }
